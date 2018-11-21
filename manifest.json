@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "I love marquee",
+  "description": "I love marquee. Move all elements in all pages",
+  "version": "1.0",
+  "icons": {
+    "48": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+  },
+  "content_scripts": [
+  {
+    "matches": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "js": ["content.js"]
+  }],
+  "permissions": [
+    "https://*/*",
+    "http://*/*"
+  ]
+}
